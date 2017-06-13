@@ -1,38 +1,35 @@
-html,
-body {
-  font-family: "Lato", "Helvetica", "Arial", sans-serif;
-  position: relative;
-}
 
+html, body {
+  font-family: "Lato", "Helvetica","Arial",sans-serif;
+}
 .portfolio-header {
   position: relative;
   background-color: white;
   background-image: url(images/header-bg.jpg);
 }
 
-.mdl-layout__header.is-compact {
-  max-height: 120px;
-}
-
 .portfolio-header .mdl-layout__header-row {
   padding: 0;
   -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mdl-layout__title {
-  font-size: 30px;
+  font-size: 34px;
   text-align: center;
   font-weight: 200;
   font-family: 'Lato', sans-serif;
   padding-top: 7px;
+  /*padding-bottom: 5px;*/
+  /*font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;*/
 }
 
 .is-compact .mdl-layout__title span {
   display: inline-block;
   height: 50px;
-  font-size: 20px;
+  font-size: 24px;
   vertical-align: middle;
 }
 
@@ -44,11 +41,19 @@ body {
   min-height: auto;
 }
 
+/*as background*/
 .portfolio-logo {
   background: url(marcin_imgs/Marcin_pencil_color.png) 50% no-repeat;
   background-size: contain;
   height: 150px;
   width: 300px;
+  margin: auto auto 10px;
+}
+/*as image tag*/
+.portfolio-logo-img {
+  background-size: contain;
+  max-height: 150px;
+  max-width: 200px;
   margin: auto auto 10px;
 }
 
@@ -59,33 +64,34 @@ body {
   margin-top: 7px;
 }
 
-.mdl-layout__tab-bar-container {
+.is-compact .portfolio-logo-img {
+  /*display: none;*/
+  max-height: 50px;
+  max-width: 50px;
+  margin-top: 7px;
+}
+
+.portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+  height: 45px;
 }
 
-@media screen and (max-width: 750px) {
-  .mdl-layout__tab-bar-container {
-    display: none;
-  }
-}
-
-.mdl-layout__tab-bar {
-  background-color: transparent;
-  max-width: 900px;
-  margin: auto;
-}
-
-.portfolio-navigation-row .mdl-navigation {
+.portfolio-navigation-row  .mdl-navigation {
   text-align: center;
   max-width: 900px;
   width: 100%;
 }
 
-.portfolio-navigation-row .mdl-layout__tab {
+.portfolio-navigation-row .mdl-navigation__link {
   -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   line-height: 42px;
+}
+
+.portfolio-header .mdl-layout__drawer-button {
+    background-color: rgba(197, 197, 197, 0.44);
 }
 
 .portfolio-navigation-row .is-active {
@@ -93,8 +99,16 @@ body {
   font-weight: bold;
 }
 
-.portfolio-header .mdl-layout__drawer-button {
-  background-color: rgba(197, 197, 197, 0.44);
+.portfolio-navigation-row .is-active:after {
+  content: "";
+  width: 70%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #81c784;
+  left: 15%;
 }
 
 .portfolio-card .mdl-card__title {
@@ -117,7 +131,7 @@ body {
   padding-bottom: 0;
 }
 
-.portfolio-blog-card-bg>.mdl-card__actions {
+.portfolio-blog-card-bg > .mdl-card__actions {
   height: 52px;
   padding: 16px;
   background: rgba(0, 0, 0, 0.2);
@@ -129,11 +143,11 @@ body {
 }
 
 img.article-image {
-  width: 100%;
+  width: 50%;
   height: auto;
   background-color: transparent;
-  background-size: contain;
   margin: auto;
+  display: inline-block;
 }
 
 .portfolio-max-width {
@@ -143,13 +157,15 @@ img.article-image {
 
 .portfolio-copy {
   max-width: 700px;
+  display: inline-block;
+  width: 50%;
 }
 
 .no-padding {
   padding: 0;
 }
 
-.no-left-padding {
+.no-left-padding{
   padding-left: 0;
 }
 
@@ -167,14 +183,14 @@ img.article-image {
   top: -4px;
 }
 
-.demo-card-event>.mdl-card__actions {
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.demo-card-event > .mdl-card__actions {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .portfolio-contact .mdl-textfield {
@@ -192,31 +208,31 @@ footer {
 }
 
 .mdl-list__info {
-  float: right;
-  margin-right: 32px;
+  float: right; 
+  margin-right:32px;
   margin: auto;
 }
 
-.mdl-list__text {
-  overflow: hidden;
+.mdl-list__text{
+  overflow:hidden;
   word-wrap: break-word;
   padding: 16px;
 }
 
-.mdl_list__title {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: .04em;
-  color: rgba(0, 0, 0, .74);
+
+.mdl_list__title{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: .04em;
+    color: rgba(0,0,0,.74);
 }
 
-.mdl-list__subtitle {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
+.mdl-list__subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
 }
-
 .mdl-card__supporting-text {
   margin: auto;
 }
