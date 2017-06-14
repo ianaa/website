@@ -25,52 +25,48 @@
   <title>Marcin Andrychowicz, PhD</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400|Raleway:100,200,300,400" rel="stylesheet">
-  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-amber.min.css" />
-  <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-amber.min.css" />-->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.1.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#top-menu">
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
     <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
       <div class="mdl-layout__header-row portfolio-logo-row">
-        <span class="mdl-layout__title">
-        <!--<img class="portfolio-logo-img" src="marcin_imgs/Marcin_pencil_color.png">
-          Marcin Andrychowicz
-        </img> -->
-        <!--<div class="portfolio-logo"></div>-->
-        <span class="mdl-layout__title">Marcin Andrychowicz</span>
+        <!-- Title -->
+        <span class="mdl-layout-title">
+          <span class="mdl-layout__title">Marcin Andrychowicz</span>
         </span>
       </div>
-      <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-        <nav class="mdl-layout__tab-bar mdl-navigation mdl-typography--body-1-force-preferred-font">
-          <a class="mdl-layout__tab is-active" href="#about">About</a>
-          <a class="mdl-layout__tab" href="#current-work">Current Work</a>
-          <a class="mdl-layout__tab" href="#publications">Publications</a>
-          <a class="mdl-layout__tab" href="#achievements">Achievements</a>
-          <a class="mdl-layout__tab" href="#contact">Contact</a>
-        </nav>
+      <!-- Tabs -->
+
+      <div class="mdl-layout__tab-bar portfolio-navigation-row mdl-navigation
+       mdl-typography--body-1-force-preferred-font " id="top-menu">
+        <a class="mdl-layout__tab is-active" href="#about">About</a>
+        <a class="mdl-layout__tab" href="#current-work">Current Work</a>
+        <a class="mdl-layout__tab" href="#publications">Publications</a>
+        <a class="mdl-layout__tab" href="#achievements">Achievements</a>
+        <a class="mdl-layout__tab" href="#contact">Contact</a>
       </div>
+
     </header>
-    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+    <div class="mdl-layout__drawer">
       <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-        <a class="mdl-navigation__link is-active" href="index.html">About</a>
-        <a class="mdl-navigation__link" href="blog.html">Current Work</a>
-        <a class="mdl-navigation__link" href="portfolio.html">Publications</a>
-        <a class="mdl-navigation__link" href="#">Achievements</a>
-        <a class="mdl-navigation__link" href="contact.html">Contact</a>
+        <a class="mdl-navigation__link is-active" href="#about">About</a>
+        <a class="mdl-navigation__link" href="#current-work">Current Work</a>
+        <a class="mdl-navigation__link" href="#publications">Publications</a>
+        <a class="mdl-navigation__link" href="#achievements">Achievements</a>
+        <a class="mdl-navigation__link" href="#contact">Contact</a>
       </nav>
     </div>
     <main class="mdl-layout__content">
-      <div>
-
-        <div class="mdl-grid portfolio-max-width mdl-tabs__panel is-active" id="about">
+      <section id="about">
+        <div class="mdl-grid portfolio-max-width">
 
           <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
             <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">About</h2>
+              <h2 class="mdl-card__title-text">Tab 1</h2>
             </div>
             <div class="mdl-card__media">
             </div>
@@ -94,35 +90,135 @@
 
 
         </div>
-        <div class="mdl-grid portfolio-max-width mdl-tabs__panel" id="contact">
+      </section>
+      <section id="current-work">
+        <div>
+          <div class="mdl-grid portfolio-max-width">
 
-          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Second</h2>
-            </div>
-            <div class="mdl-card__media">
-            </div>
-
-            <div class="mdl-grid portfolio-copy">
-              <!--<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>-->
-              <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
-                <p>
-                  Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum
-                  do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur
-                  consequat esse est sit veniam adipisicing ipsum enim irure.
-                </p>
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Tab 2</h2>
+              </div>
+              <div class="mdl-card__media">
               </div>
 
-              <div class="mdl-cell mdl-cell--6-col">
-                <img class="article-image" src="images/marcin_polaroid.jpg" border="0" alt="">
-              </div>
+              <div class="mdl-grid portfolio-copy">
+                <!--<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>-->
+                <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                  <p>
+                    Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum
+                    do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur
+                    consequat esse est sit veniam adipisicing ipsum enim irure.
+                  </p>
+                </div>
 
+                <div class="mdl-cell mdl-cell--6-col">
+                  <img class="article-image" src="images/marcin_polaroid.jpg" border="0" alt="">
+                </div>
+
+              </div>
             </div>
+
+
           </div>
-
-
         </div>
-      </div>
+      </section>
+      <section id="publications">
+        <div>
+          <div class="mdl-grid portfolio-max-width">
+
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Tab 3</h2>
+              </div>
+              <div class="mdl-card__media">
+              </div>
+
+              <div class="mdl-grid portfolio-copy">
+                <!--<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>-->
+                <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                  <p>
+                    Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum
+                    do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur
+                    consequat esse est sit veniam adipisicing ipsum enim irure.
+                  </p>
+                </div>
+
+                <div class="mdl-cell mdl-cell--6-col">
+                  <img class="article-image" src="images/marcin_polaroid.jpg" border="0" alt="">
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+      <section id="achievements">
+        <div>
+          <div class="mdl-grid portfolio-max-width">
+
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Tab 4</h2>
+              </div>
+              <div class="mdl-card__media">
+              </div>
+
+              <div class="mdl-grid portfolio-copy">
+                <!--<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>-->
+                <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                  <p>
+                    Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum
+                    do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur
+                    consequat esse est sit veniam adipisicing ipsum enim irure.
+                  </p>
+                </div>
+
+                <div class="mdl-cell mdl-cell--6-col">
+                  <img class="article-image" src="images/marcin_polaroid.jpg" border="0" alt="">
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div>
+          <div class="mdl-grid portfolio-max-width">
+
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Tab 5</h2>
+              </div>
+              <div class="mdl-card__media">
+              </div>
+
+              <div class="mdl-grid portfolio-copy">
+                <!--<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>-->
+                <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                  <p>
+                    Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum
+                    do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur
+                    consequat esse est sit veniam adipisicing ipsum enim irure.
+                  </p>
+                </div>
+
+                <div class="mdl-cell mdl-cell--6-col">
+                  <img class="article-image" src="images/marcin_polaroid.jpg" border="0" alt="">
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
       <footer class="mdl-mini-footer">
         <div class="mdl-mini-footer__left-section">
         </div>
@@ -133,6 +229,6 @@
     </main>
   </div>
   <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
-</html>
