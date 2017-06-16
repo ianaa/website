@@ -26,14 +26,13 @@ body {
   text-align: center;
   font-weight: 200;
   font-family: 'Lato', sans-serif;
-  padding-top: 7px;
+  display: flex;
+  align-items: center;
 }
 
-.is-compact .mdl-layout__title span {
-  display: inline-block;
+.is-compact .mdl-layout__title {
   height: 50px;
-  font-size: 20px;
-  vertical-align: middle;
+  font-size: 24px;
 }
 
 .portfolio-logo-row {
@@ -65,6 +64,26 @@ body {
 
 @media screen and (max-width: 750px) {
   .mdl-layout__tab-bar-container {
+    display: none;
+  }
+  .mdl-layout__title {
+    font-size: 26px;
+    padding-bottom: 10px;
+    align-self: flex-end;
+  }
+  .is-compact .mdl-layout__title {
+    font-size: 22px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    align-self: center;
+  }
+  .portfolio-header {
+    background-position: 10%;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .mdl-layout__drawer-button {
     display: none;
   }
 }
@@ -126,13 +145,14 @@ body {
 .mdl-card__media {
   background-color: transparent;
   margin: auto;
+  overflow: hidden;
 }
 
 img.article-image {
   width: 100%;
   height: auto;
   background-color: transparent;
-  background-size: contain;
+  background-size: cover;
   margin: auto;
 }
 
@@ -142,7 +162,7 @@ img.article-image {
 }
 
 .portfolio-copy {
-  max-width: 700px;
+  max-width: 800px;
 }
 
 .no-padding {
@@ -195,12 +215,13 @@ footer {
   float: right;
   margin-right: 32px;
   margin: auto;
+  padding: 5px;
 }
 
 .mdl-list__text {
   overflow: hidden;
   word-wrap: break-word;
-  padding: 16px;
+  padding: 8px;
 }
 
 .mdl_list__title {
@@ -215,8 +236,36 @@ footer {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  padding: 3px 0;
+}
+
+.mdl-card__title {
+  padding-left: 32px;
 }
 
 .mdl-card__supporting-text {
   margin: auto;
 }
+
+#contact .mdl-card__supporting-text {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: rgba(0, 0, 0, .54);
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.links a:hover {
+  color: rgb(255, 215, 64);
+  /*text-decoration: underline;*/
+}
+
+
+/*#current-work .mdl-cell {
+  flex-direction: row;
+}*/

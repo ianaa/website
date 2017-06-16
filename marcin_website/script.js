@@ -18,7 +18,7 @@ $(document).ready(() => {
 
 
   function scrollToSection(e) {
-    const href = $(this).attr('href');
+    const href = $(e.target).attr('href');
     if (lastSection === href) {
       return;
     }
@@ -55,8 +55,8 @@ $(document).ready(() => {
   menuItems.click(scrollToSection);
 
   drawerItems.click((e) => {
-    closeDrawer();
     scrollToSection(e);
+    closeDrawer(e);
   });
 
 
