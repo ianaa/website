@@ -1,0 +1,210 @@
+{
+  "about": {
+    "imageUrl": "images/marcin_polaroid.jpg",
+    "content": "I work on Reinforcement Learning and robotics at OpenAI.\nI used to work on gradient-based metalearning and learning algorithms at DeepMind.\nBefore that I did a PhD in cryptocurrencies at the University of Warsaw.\nI spent a lot of time participating in various programming competitions, in particular, I won 3 golds medals at International Olympiad in Informatics."
+  },
+  "publications": [{
+      "category": "Machine Learning",
+      "items": [{
+          "title": "Hindsight Experience Replay",
+          "published": "2017-07-05T17:55:53Z",
+          "year": "2017",
+          "pdf": "http://arxiv.org/pdf/1707.01495",
+          "links":[{
+              "type": "video",
+              "url": "https://www.youtube.com/watch?v=Dz_HuzgMxzo"
+          }],
+          "authors": "M. Andrychowicz, F. Wolski, A. Ray, J. Schneider, R. Fong, P. Welinder, B. McGrew, J. Tobin, P. Abbeel, W. Zaremba",
+          "selected": true
+        },
+        {
+          "title": "Parameter Space Noise for Exploration",
+          "published": "2017-06-06T18:09:29Z",
+          "year": "2017",
+          "pdf": "http://arxiv.org/pdf/1706.01905",
+          "authors": "M. Plappert, R. Houthooft, P. Dhariwal, S. Sidor, R. Y. Chen, X. Chen, T. Asfour, P. Abbeel, M. Andrychowicz",
+          "selected": true
+        },
+        {
+          "title": "One-Shot Imitation Learning",
+          "published": "2017-03-21T17:22:29Z",
+          "year": "2017",
+          "pdf": "http://arxiv.org/pdf/1703.07326",
+          "links":[{
+              "type": "blog",
+              "url": "https://blog.openai.com/robots-that-learn/"
+            },
+            {
+              "type": "video",
+              "url": "http://bit.ly/one-shot-imitation"
+            }],
+          "press": [
+            {
+              "name": "CNBC",
+              "url": "http://www.cnbc.com/2017/05/17/elon-musk-openai-robot.html"
+            },{
+              "name": "Edgadget",
+              "url": "https://www.engadget.com/2017/05/16/openai-s-new-system-lets-you-train-robots-entirely-in-vr/"
+            }, {
+              "name":  "Futurism",
+              "url": "https://futurism.com/elon-musk-just-unveiled-breakthrough-ai-research-heres-what-your-need-to-know/"
+            }
+          ],
+          "authors": "Y. Duan, M. Andrychowicz, B. C. Stadie, J. Ho, J. Schneider, I. Sutskever, P. Abbeel, W. Zaremba",
+          "selected": true
+        },
+        {
+          "title": "Learning to learn by gradient descent by gradient descent",
+          "published": "2016-06-14T17:49:32Z",
+          "year": "2016",
+          "pdf": "http://arxiv.org/pdf/1606.04474",
+          "links":[{
+              "type": "code",
+              "url": "https://github.com/deepmind/learning-to-learn"
+          }],
+          "authors": "M. Andrychowicz, M. Denil, S. Gomez, M. W. Hoffman, D. Pfau, T. Schaul, B. Shillingford, N. de Freitas"
+        },
+        {
+          "title": "Learning Efficient Algorithms with Hierarchical Attentive Memory",
+          "published": "2016-02-09T23:24:33Z",
+          "year": "2016",
+          "pdf": "http://arxiv.org/pdf/1602.03218",
+          "authors": "M. Andrychowicz, K. Kurach"
+        },
+        {
+          "title": "Neural Random-Access Machines",
+          "published": "2015-11-19T21:36:28Z",
+          "year": "2015",
+          "pdf": "http://arxiv.org/pdf/1511.06392",
+          "authors": "K. Kurach, M. Andrychowicz, I. Sutskever"
+        }
+      ]
+    }, {
+      "category": "Cryptocurrencies",
+      "items": [
+        {
+          "title": "Secure Multiparty Computations on Bitcoin",
+          "year": "2013",
+          "pdf": "https://eprint.iacr.org/2013/784.pdf",
+          "authors": "M. Andrychowicz, S. Dziembowski, D. Malinowski, L. Mazurek",
+          "links":[{
+            "type": "journal version",
+            "url": "https://cacm.acm.org/magazines/2016/4/200175-secure-multiparty-computations-on-bitcoin/"
+            }, {
+            "type": "video",
+            "url": "https://vimeo.com/157765782"
+          }],
+          "info": "Best Paper Award at IEEE Symposium on Security and Privacy 2014",
+          "selected": true
+        },
+        {
+          "title": "PoW-Based Distributed Cryptography with no Trusted Setup",
+          "year": "2014",
+          "pdf": "http://eprint.iacr.org/2014/796.pdf",
+          "authors": "M. Andrychowicz, S. Dziembowski"
+        },
+        {
+          "title": "On the Malleability of Bitcoin Transactions",
+          "year": "2014",
+          "pdf": "https://ai2-s2-pdfs.s3.amazonaws.com/c276/84f2fe5a85fe2871f693edc46061d0ecb20d.pdf",
+          "authors": "M. Andrychowicz, S. Dziembowski, D. Malinowski, L. Mazurek"
+        },
+        {
+          "title": "Modeling Bitcoin Contracts by Timed Automata",
+          "published": "2014-05-08T10:01:28Z",
+          "year": "2014",
+          "pdf": "http://arxiv.org/pdf/1405.1861",
+          "authors": "M. Andrychowicz, S. Dziembowski, D. Malinowski, L. Mazurek"
+        },
+        {
+          "title": "Fair Two-Party Computations via Bitcoin Deposits",
+          "year": "2013",
+          "pdf": "https://eprint.iacr.org/2013/837.pdf",
+          "authors": "M. Andrychowicz, S. Dziembowski, D. Malinowski, L. Mazurek"
+        }
+        ]
+    }, {
+      "category": "Leakage-Resilient Cryptography",
+      "items": [
+        {
+          "title": "Circuit Compilers with O (1 / log (n)) Leakage Rate",
+          "year": "2016",
+          "pdf": "https://eprint.iacr.org/2016/173.pdf",
+          "authors": "M. Andrychowicz, S. Dziembowski, S. Faust"
+        },
+        {
+          "title": "Leakage-Resilient Cryptography over Large Finite Fields: Theory and Practice",
+          "year": "2015",
+          "pdf": "http://eprint.iacr.org/2015/317.pdf",
+          "authors": "M. Andrychowicz, D. Masny, E. Persichetti"
+        },
+        {
+          "title": "Efficient Leakage Resilient Circuit Compilers",
+          "year": "2015",
+          "pdf": "https://link.springer.com/chapter/10.1007/978-3-319-16715-2_17",
+          "authors": "M. Andrychowicz, I. Damgard, S. Dziembowski, S. Faust, A. Polychroniadou"
+        }
+        ]
+    },
+    {
+      "category": "Patents",
+      "items": [{
+        "title": "Circuit and method for identifying exception cases in a floating-point unit and graphics processing unit employing the same",
+        "authors": "M. Andrychowicz, A. Fit-Florea. Original assignee: Nvidia Corporation.",
+        "year": "2012",
+        "pdf": "https://www.google.com/patents/US9448806",
+        "details": "The patent application concerns a universal method for accelerating computation of basic mathematical operations, which may be applied on software or hardware level and is currently used in GPUs with CUDA technology."
+      }]
+    },
+    {
+      "category": "Books",
+      "items": [{
+        "title": "Looking for a challenge? The Ultimate Problem Set from the University of Warsaw Programming Competitions",
+        "authors": "K. Diks (Ed.). Author of two chapters.",
+        "year": "2012",
+        "pdf": "http://www.lookingforachallengethebook.com/",
+        "details": ""
+      }]
+    }
+  ],
+  "awards": [{
+      "category": "Programming Competitions",
+      "items": [{
+        "title": "ACM-ICPC World Finals",
+        "details": "bronze medal in 2009 and silver medal in 2013"
+      }, {
+        "title": "ACM-ICPC Central Europe Regional Contest (CERC)",
+        "details": "1st place in 2008, 5th place in 2009 and 3rd place in 2012"
+      }, {
+        "title": "Polish Collegiate Programming Contest",
+        "details": "2nd place in 2009 and 2012"
+      }, {
+        "title": "TopCoder Open (Algorithm)",
+        "details": "finalist in 2012 and 2013"
+      }, {
+        "title": "TopCoder High School Finals",
+        "details": "3rd place in 2008"
+      }, {
+        "title": "International Olympiad in Informatics",
+        "details": "gold medals in 2006, 2007 and 2008"
+      }, {
+        "title": "Central European Olympiad in Informatics",
+        "details": "silver medal in 2006, bronze medal in 2007 and gold medal in 2008"
+      }, {
+        "title": "Baltic Olympiad in Informatics",
+        "details": "gold medal in 2006"
+      }, {
+        "title": "Algorithmic Engagements",
+        "details": "1st place in 2008 and 3rd place in 2009"
+      }, {
+        "title": "Polish Olympiad in Informatics",
+        "details": "silver medal in 2006, golds medals in 2007 and 2008"
+      }]
+    }
+  ],
+  "contact": {
+    "imageUrl": "images/contact-can.jpg",
+    "email": "marcin.andrychowicz@gmail.com",
+    "scholar": "https://scholar.google.pl/citations?user=n9K1v-cAAAAJ&hl=en"
+  }
+}

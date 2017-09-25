@@ -1,7 +1,38 @@
-html,
-body {
+:root {
   font-family: "Lato", "Helvetica", "Arial", sans-serif;
   position: relative;
+}
+/*
+a {
+  color: rgba(0, 0, 0, .54);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}*/
+.links a{
+  color: rgba(0, 0, 0, .54);
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.links a:hover {
+  color: rgb(255, 215, 64);
+  text-decoration: underline;
+}
+
+.pubs-links {
+  color: rgba(0, 0, 0, 0.54);
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: underline;
+  text-decoration-style: dotted; 
+}
+
+.pubs-links:hover {
+  color: rgb(255, 215, 64);
+  text-decoration: underline;
 }
 
 .portfolio-header {
@@ -230,13 +261,18 @@ footer {
   line-height: 24px;
   letter-spacing: .04em;
   color: rgba(0, 0, 0, .74);
+  text-decoration: none;
+}
+a.mdl_list__title:hover {
+  text-decoration: underline;
 }
 
 .mdl-list__subtitle {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding: 3px 0;
+  padding: 5px 0;
+  margin: 0;
 }
 
 .mdl-card__title {
@@ -253,19 +289,15 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-
-a {
-  color: rgba(0, 0, 0, .54);
-  text-decoration: underline;
-  font-weight: normal;
+#about .mdl-card__supporting-text p{
+  font-size: 15px;
 }
-
-.links a:hover {
-  color: rgb(255, 215, 64);
-  /*text-decoration: underline;*/
+#about .mdl-card__title {
+  padding-bottom: 0;
 }
-
-
-/*#current-work .mdl-cell {
-  flex-direction: row;
-}*/
+#about .image {
+  margin-top: 0;
+} 
+#about .portfolio-copy {
+  padding-top: 0;
+}

@@ -7,30 +7,25 @@
   <meta name="description" content="A personal website of Marcin Andrychowicz, PhD">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Marcin Andrychowicz, PhD</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400|Raleway:100,200,300,400" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en|Lato:100,300,400|Open+Sans:300,400|Raleway:100,200,300,400">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-amber.min.css" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
-<body data-spy="scroll" data-target="#top-menu">
+<body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
     <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
       <div class="mdl-layout__header-row portfolio-logo-row">
-        <!-- Title -->
-        <!--<span class="mdl-layout__title">-->
         <span class="mdl-layout__title">Marcin Andrychowicz</span>
-        <!--</span>-->
       </div>
-      <!-- Tabs -->
-
       <div class="mdl-layout__tab-bar portfolio-navigation-row mdl-navigation
        mdl-typography--body-1-force-preferred-font " id="top-menu">
         <a class="mdl-layout__tab is-active" href="#about">About</a>
-        <a class="mdl-layout__tab" href="#current-work">Current Work</a>
+        <!--<a class="mdl-layout__tab" href="#current-work">Current Work</a>-->
         <a class="mdl-layout__tab" href="#publications">Publications</a>
-        <a class="mdl-layout__tab" href="#awards">Awards</a>
+        <a class="mdl-layout__tab" href="#awards">Competitions</a>
         <a class="mdl-layout__tab" href="#contact">Contact</a>
       </div>
 
@@ -38,7 +33,7 @@
     <div class="mdl-layout__drawer">
       <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
         <a class="mdl-navigation__link is-active" href="#about">About</a>
-        <a class="mdl-navigation__link" href="#current-work">Current Work</a>
+        <!--<a class="mdl-navigation__link" href="#current-work">Current Work</a>-->
         <a class="mdl-navigation__link" href="#publications">Publications</a>
         <a class="mdl-navigation__link" href="#awards">Awards</a>
         <a class="mdl-navigation__link" href="#contact">Contact</a>
@@ -47,206 +42,53 @@
     <main class="mdl-layout__content">
       <section id="about">
         <div class="mdl-grid portfolio-max-width">
-
           <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
             <div class="mdl-card__title">
               <h2 class="mdl-card__title-text">About</h2>
             </div>
-            <div class="mdl-card__media">
-            </div>
-
             <div class="mdl-grid portfolio-copy">
-              <!--<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>-->
-              <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+              <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding links" >
                 <p>
-                  Education PhD studies, Computer Science, University of Warsaw. I finished a 4-year PhD program in 2 years. My research concerned cryptocurrencies (e.g. Bitcoin) and cryptographic systems provably-secure against physical attacks. Master’s Degree, Computer
-                  Science, University of Warsaw, GPA: 4.89/5.0. Bachelor’s Degree, Computer Science, University of Warsaw, GPA: 4.78/5.0. I have also studied Mathematics there for two years and Physics for one year. I speak English, Polish and Russian.
-                  Love hiking, diving, indoor climbing...
+                  I currently work on reinforcement learning and robotics at <a href="https://www.openai.com/" target="blank">OpenAI</a>.
+                  I used to work on gradient-based metalearning and learning algorithms at <a href="https://deepmind.com/" target="blank">DeepMind</a>.
+                  Before that I interned at <a href="https://www.google.com/intl/en/about/" target="blank">Google</a> (twice, including once at <a href="https://research.google.com/teams/brain/" target="blank">
+                  Google Brain</a>) and <a href="http://www.nvidia.com/" target="blank">Nvidia</a>.
+                </p>
+                <p>
+                  I finished a 4-year PhD program  in 2 years at the <a href="http://en.uw.edu.pl/" target="blank">University of Warsaw</a> where
+                  I worked on cryptocurrencies (mostly Bitcoin) and leakage-resilient cryptography.
+                  Apart from MS in Computer Science I also studied Mathematics for 2 years and Physics for 1 year.
+                </p>
+                <p>
+                  I also used to participate in various programming competitions.
+                  Among my most prominent awards are 3 gold medals at <a href="https://en.wikipedia.org/wiki/International_Olympiad_in_Informatics#Multiple_IOI_winners" target="blank">
+                  International Olympiad in Informatics</a>.
                 </p>
               </div>
-
-              <div class="mdl-cell mdl-cell--6-col">
+              <div class="mdl-cell mdl-cell--6-col image">
                 <img class="article-image" src="images/marcin_polaroid.jpg" border="0" alt="">
               </div>
-
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                Get Started
+              </a>
             </div>
           </div>
-
-
         </div>
       </section>
+
       <section id="current-work">
-        <div>
-          <div class="mdl-grid portfolio-max-width">
-
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">Current Work</h2>
-              </div>
-              <div class="mdl-card__media">
-              </div>
-
-              <div class="mdl-grid portfolio-copy">
-                <!--<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Introduction</h3>-->
-                <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
-                  <p>
-                    I currently work on .... as a part of robotics team at OpenAI.
-                  </p>
-                </div>
-
-                <div class="mdl-cell mdl-cell--6-col">
-                  <img class="article-image" src="https://blog.openai.com/assets/images/research/covers/robots-that-learn/1x-no-mark.jpg" border="0" alt="">
-                </div>
-
-              </div>
-            </div>
-
-
-          </div>
-        </div>
       </section>
+
       <section id="publications">
         <div class="mdl-grid portfolio-max-width">
-
           <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-            <div class="mdl-card__title">
+            <div class="mdl-card__title ">
               <h2 class="mdl-card__title-text">Publications</h2>
             </div>
-
-            <div class="mdl-card__supporting-text">
-              <p class="mdl-cell mdl-cell--12-col mdl-card__title-text">Machine Learning</p>
-              <div class="mdl-list">
-                <div class="mdl-list__text">
-                  <div class="mdl-list__info">
-                    2017
-                  </div>
-                  <div class="mdl_list__title">One-Shot Imitation Learning</div>
-                  <div class="mdl-list__subtitle">Yan Duan, Marcin Andrychowicz, Bradly Stadie, Jonathan Ho, Jonas Schneider, Ilya Sutskever, Pieter Abbeel, Wojciech Zaremba</div>
-                </div>
-                <div class="mdl-list__text">
-                  <div class="mdl-list__info">
-                    2017
-                  </div>
-                  <div class="mdl_list__title">Parameter Space Noise for Exploration</div>
-                  <div class="mdl-list__subtitle">Matthias Plappert, Rein Houthooft, Prafulla Dhariwal, Szymon Sidor, Richard Y Chen, Xi Chen, Tamim Asfour, Pieter Abbeel, Marcin Andrychowicz</div>
-                </div>
-                <div class="mdl-list__text">
-                  <div class="mdl-list__info">
-                    2016
-                  </div>
-                  <div class="mdl_list__title">Learning Efficient Algorithms with Hierarchical Attentive Memory</div>
-                  <div class="mdl-list__subtitle">M. Andrychowicz, K. Kurach</div>
-                </div>
-                <div class="mdl-list__text">
-                  <div class="mdl-list__info">
-                    2015
-                  </div>
-                  <div class="mdl_list__title">Neural Random-Access Machines, ICLR</div>
-                  <div class="mdl-list__subtitle">K. Kurach, M. Andrychowicz, I. Sutskever</div>
-                </div>
-              </div>
-              <p class="mdl-cell mdl-cell--12-col mdl-card__title-text">Cryptography</p>
-              <div class='mdl-list'>
-                <div class="mdl-list">
-                  <div class="mdl-list__text">
-                    <div class="mdl-list__info">
-                      2016
-                    </div>
-                    <div class="mdl_list__title">Circuit Compilers with O (1 / log (n)) Leakage Rate, EUROCRYPT</div>
-                    <div class="mdl-list__subtitle">M. Andrychowicz, S. Dziembowski, S. Faust</div>
-                  </div>
-                </div>
-                <div class="mdl-list">
-                  <div class="mdl-list__text">
-                    <div class="mdl-list__info">
-                      2015
-                    </div>
-                    <div class="mdl_list__title">Secure Multiparty Computations on Bitcoin, Communications of the ACM</div>
-                    <div class="mdl-list__subtitle">M. Andrychowicz, S. Dziembowski, D. Malinowski, Ł. Mazurek</div>
-                  </div>
-                </div>
-                <div class="mdl-list">
-                  <div class="mdl-list__text">
-                    <div class="mdl-list__info">
-                      2015
-                    </div>
-                    <div class="mdl_list__title">PoW-Based Distributed Cryptography with no Trusted Setup, International Cryptology Conference (CRYPTO)</div>
-                    <div class="mdl-list__subtitle">M. Andrychowicz, S. Dziembowski</div>
-                  </div>
-                </div>
-                <div class="mdl-list">
-                  <div class="mdl-list__text">
-                    <div class="mdl-list__info">
-                      2015
-                    </div>
-                    <div class="mdl_list__title">On the Malleability of Bitcoin Transactions, Second Workshop on Bitcoin Research (in Assocation with Financial Crypto)</div>
-                    <div class="mdl-list__subtitle">M. Andrychowicz, S. Dziembowski, D. Malinowski, Ł. Mazurek</div>
-                  </div>
-                </div>
-                <div class="mdl-list">
-                  <div class="mdl-list__text">
-                    <div class="mdl-list__info">
-                      2014
-                    </div>
-                    <div class="mdl_list__title">Modeling Bitcoin Contracts by Timed Automata, Formal Modeling and Analysis of Timed Systems (FORMATS)</div>
-                    <div class="mdl-list__subtitle">M. Andrychowicz, S. Dziembowski, D. Malinowski, Ł. Mazurek</div>
-                  </div>
-                </div>
-                <div class="mdl-list">
-                  <div class="mdl-list__text">
-                    <div class="mdl-list__info">
-                      2014
-                    </div>
-                    <div class="mdl_list__title">Fair Two-Party Computations via the Bitcoin Deposits, First Workshop on Bitcoin Research (in Assocation with Financial Crypto)</div>
-                    <div class="mdl-list__subtitle">M. Andrychowicz, S. Dziembowski, D. Malinowski, Ł. Mazurek</div>
-                  </div>
-                </div>
-                <div class="mdl-list">
-                  <div class="mdl-list__text">
-                    <div class="mdl-list__info">
-                      2014
-                    </div>
-                    <div class="mdl_list__title">Secure Multiparty Computations on Bitcoin, IEEE Symposium on Security and Privacy</div>
-                    <div class="mdl-list__subtitle">M. Andrychowicz, S. Dziembowski, D. Malinowski, Ł. Mazurek</div>
-                  </div>
-                </div>
-              </div>
-              <p class="mdl-cell mdl-cell--12-col mdl-card__title-text">Patents</p>
-              <div class="mdl-list">
-                <div class="mdl-list__text">
-                  <div class="mdl-list__info">
-                    2016
-                  </div>
-                  <div class="mdl_list__title">3 patent applications regarding Machine Learning techniques.</div>
-                  <div class="mdl-list__subtitle">Original assignee: Google Inc.</div>
-                </div>
-              </div>
-              <div class="mdl-list">
-                <div class="mdl-list__text">
-                  <div class="mdl-list__info">
-                    2012
-                  </div>
-                  <div class="mdl_list__title">
-                    Circuit and method for identifying exception cases in a floating-point unit and graphics processing unit employing the same
-                  </div>
-                  <div class="mdl-list__subtitle">M. Andrychowicz, A. Fit-Florea. Original assignee: NVIDIA Corporation.</div>
-                  <div class="mdl-list__subtitle">
-                    The patent application concerns a universal method for accelerating computation of basic mathematical operations, which may be applied on software or hardware level and is currently used in GPUs with CUDA technology.
-                  </div>
-                </div>
-              </div>
-              <p class="mdl-cell mdl-cell--12-col mdl-card__title-text">Books</p>
-              <div class="mdl-list">
-                <div class="mdl-list__text">
-                  <div class="mdl-list__info">
-                    2012
-                  </div>
-                  <div class="mdl_list__title">Looking for a challenge? The Ultimate Problem Set from the University of Warsaw Programming Competitions</div>
-                  <div class="mdl-list__subtitle">K. Diks (Ed.). Author of two chapters.</div>
-                </div>
-              </div>
+            <div class="mdl-card__supporting-text mdl-card--border">
             </div>
-
           </div>
         </div>
       </section>
@@ -254,18 +96,14 @@
         <div class="mdl-grid portfolio-max-width">
           <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
             <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Awards</h2>
+              <h2 class="mdl-card__title-text">Programming Competitions</h2>
             </div>
             <div class="mdl-card__supporting-text">
-              <p class="mdl-cell mdl-cell--12-col mdl-card__title-text">Scientific conferences</p>
               <div class="mdl-list">
                 <div class="mdl-list__text">
-                  <div class="mdl_list__title">Best Paper Award for the paper Secure Multiparty Computations on BitCoin</div>
-                  <div class="mdl-list__subtitle">IEEE Symposium on Security and Privacy 2014</div>
+                  <div class="mdl_list__title">International Olympiad in Informatics</div>
+                  <div class="mdl-list__subtitle">gold medals in 2006, 2007 and 2008</div>
                 </div>
-              </div>
-              <p class="mdl-cell mdl-cell--12-col mdl-card__title-text">Programming Competitions</p>
-              <div class="mdl-list">
                 <div class="mdl-list__text">
                   <div class="mdl_list__title">ACM-ICPC World Finals</div>
                   <div class="mdl-list__subtitle">bronze medal in 2009 and silver medal in 2013</div>
@@ -273,22 +111,6 @@
                 <div class="mdl-list__text">
                   <div class="mdl_list__title">ACM-ICPC Central Europe Regional Contest (CERC)</div>
                   <div class="mdl-list__subtitle">1st place in 2008, 5th place in 2009 and 3rd place in 2012</div>
-                </div>
-                <div class="mdl-list__text">
-                  <div class="mdl_list__title">Polish Collegiate Programming Contest</div>
-                  <div class="mdl-list__subtitle">2nd place in 2009 and 2012</div>
-                </div>
-                <div class="mdl-list__text">
-                  <div class="mdl_list__title">TopCoder Open (Algorithm)</div>
-                  <div class="mdl-list__subtitle">finalist in 2012 and 2013</div>
-                </div>
-                <div class="mdl-list__text">
-                  <div class="mdl_list__title">TopCoder High School Finals</div>
-                  <div class="mdl-list__subtitle">3rd place in 2008</div>
-                </div>
-                <div class="mdl-list__text">
-                  <div class="mdl_list__title">International Olympiad in Informatics</div>
-                  <div class="mdl-list__subtitle">gold medals in 2006, 2007 and 2008</div>
                 </div>
                 <div class="mdl-list__text">
                   <div class="mdl_list__title">Central European Olympiad in Informatics</div>
@@ -299,12 +121,24 @@
                   <div class="mdl-list__subtitle">gold medal in 2006</div>
                 </div>
                 <div class="mdl-list__text">
-                  <div class="mdl_list__title">Algorithmic Engagements</div>
-                  <div class="mdl-list__subtitle">1st place in 2008 and 3rd place in 2009</div>
+                  <div class="mdl_list__title">TopCoder Open (Algorithm)</div>
+                  <div class="mdl-list__subtitle">finalist in 2012 and 2013</div>
+                </div>
+                <div class="mdl-list__text">
+                  <div class="mdl_list__title">TopCoder High School Finals</div>
+                  <div class="mdl-list__subtitle">3rd place in 2008</div>
+                </div>
+                <div class="mdl-list__text">
+                  <div class="mdl_list__title">Polish Collegiate Programming Contest</div>
+                  <div class="mdl-list__subtitle">2nd place in 2009 and 2012</div>
                 </div>
                 <div class="mdl-list__text">
                   <div class="mdl_list__title">Polish Olympiad in Informatics</div>
                   <div class="mdl-list__subtitle">silver medal in 2006, golds medals in 2007 and 2008</div>
+                </div>
+                <div class="mdl-list__text">
+                  <div class="mdl_list__title">Algorithmic Engagements</div>
+                  <div class="mdl-list__subtitle">1st place in 2008 and 3rd place in 2009</div>
                 </div>
               </div>
             </div>
@@ -322,16 +156,11 @@
               <img class="article-image" src="images/contact-can.jpg" border="0" alt/>
             </div>
             <div class="mdl-cell--8-col mdl-card__supporting-text mdl-typography--body-1-force-preferred-font links left-padding">
-              <p> Email me at
-                <a href="mailto:marcin.andrychowicz@gmail.com">marcin.andrychowicz@gmail.com</a>
+              <p> Email me at: marcin.andrychowicz (at) gmail.com
               </p>
               <p> Check me out on
                 <a href="https://scholar.google.pl/citations?user=n9K1v-cAAAAJ&hl=en" target="blank">Google Scholar</a>
               </p>
-              <p> Find me on
-                <a href="https://www.facebook.com/marcin.andrychowicz" target="blank">Facebook</a>
-              </p>
-              <p><a href=" MarcinAndrychowicz_CV.pdf " download> Download a copy of my resume</a></p>
               <p> Or find me somewhere in Mission district in San Francisco</p>
             </div>
 

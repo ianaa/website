@@ -1,9 +1,78 @@
 $(document).ready(() => {
+  // ///////////////////
+  // Dynamic content //
+  // ///////////////////
+
+  $.getJSON('data.json', (data) => {
+    // About
+    // const aboutParagraph = $('#about .mdl-card__supporting-text');
+    // const lines = [];
+    // data.about.content.split('\n').forEach((line) => {
+    //   const p = $('<p />');
+    //   p.text(line);
+    //   lines.push(p);
+    // });
+    // aboutParagraph.append(lines);
+
+    // Publications
+    const publications = $('#publications .mdl-card__supporting-text');
+    const entries = [];
+    data.publications.forEach((category) => {
+      const section = $('<div/>');
+      const name = $(`<p class="mdl-cell mdl-cell--12-col mdl-card__title-text">${category.category}</p>`);
+      const list = $('<div class="mdl-list "></div>');
+      const items = [];
+
+
+      category.items.forEach((item) => {
+        const itemDiv = $('<div class="mdl-list__text"></div>');
+        const year = $(`<div class="mdl-list__info">${item.year}</div>`);
+        const title = $(`<div><a class="mdl_list__title" href="${item.pdf}" target="blank">${item.title}</a></div>`);
+        if (item.links) {
+          const links = [];
+          item.links.forEach((link) => {
+            const linkTag = $(`<a class="pubs-links" href="${link.url}" target="blank">[${link.type}]</a>`);
+            links.push(linkTag);
+          });
+          title.append(links);
+        }
+        const authors = $(`<p class="mdl-list__subtitle">${item.authors}</p>`);
+        itemDiv.append(year, title, authors);
+        if (item.info) {
+          itemDiv.append($(`<p class="mdl-list__subtitle">${item.info}</p>`));
+        }
+        if (item.press) {
+          const press = [];
+          item.press.forEach((link) => {
+            const linkTag = $(`<a class="pubs-links" href="${link.url}" target="blank">${link.name}</a>`);
+            press.push(linkTag);
+          });
+          itemDiv.append($('<div class="mdl-list__subtitle">Press coverage: </div>').append(press));
+        }
+        items.push(itemDiv);
+      });
+      list.append(items);
+
+      // make show more button
+      const button = $(`<div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            Show more
+          </a>
+        </div>`);
+      section.append(name, list, button);
+      entries.push(section);
+    });
+    publications.append(entries);
+  });
+
+
+  // //////////////////
+  // Scroll spy //////
+  // //////////////////
+
   // Cache selectors
-  let lastSection = '#about';
   const topMenu = $('#top-menu');
   const topMenuHeight = $('.mdl-layout__header').outerHeight();
-  const lastOffset = 0;
   // All list items
   const menuItems = topMenu.find('a');
   // All drawer links
@@ -15,6 +84,7 @@ $(document).ready(() => {
     const item = $($(this).attr('href'));
     if (item.length) { return item; }
   });
+  let lastSection = '#about';
 
 
   function scrollToSection(e) {
@@ -32,21 +102,19 @@ $(document).ready(() => {
       scrollTop: offsetTop,
     }, 300);
     lastSection = href;
-    // lastOffset = $(href).offset().top;
     e.preventDefault();
   }
 
   function closeDrawer() {
-    const d = document.querySelector('.mdl-layout');
+    const d = $('.mdl-layout');
     d.MaterialLayout.toggleDrawer();
   }
 
   function addActiveClass(target) {
-    console.log('called');
-    const tabActive = document.querySelector('.mdl-layout__tab.is-active');
-    tabActive.classList.remove('is-active');
-    const tab = document.querySelector(`.mdl-layout__tab[href='#${target}'`);
-    tab.classList.add('is-active');
+    const tabActive = $('.mdl-layout__tab.is-active');
+    tabActive.removeClass('is-active');
+    const tab = $(`.mdl-layout__tab[href='#${target}'`);
+    tab.addClass('is-active');
   }
 
   // Bind click handler to menu items
